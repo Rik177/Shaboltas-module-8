@@ -1,4 +1,4 @@
-const galleryButton = document.querySelector(".main__button")
+const galleryButton = document.querySelector(".header__button")
 
 async function getPhotos() {
     const loader = document.querySelector(".gallery__loader")
@@ -23,10 +23,6 @@ function addPhotos(photosArray) {
     photosArray.forEach(obj => {
         const imageElement = document.createElement("img");
         imageElement.src = obj.url;
-        // imageElement.style.width = 400 + "px";
-        // imageElement.style.height = 300 + "px";
-        imageElement.style.objectFit = "cover";
-        imageElement.style.borderRadius = 10 + "px";
         gallery.appendChild(imageElement);
     });
 
