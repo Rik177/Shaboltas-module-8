@@ -31,6 +31,10 @@
 
 .header__button:hover {
     transform: scale(1.07);
+
+}
+.header__button:focus {
+    box-shadow: 0 0 5px 5px #d46f55 ;
 }
 
 .gallery {
