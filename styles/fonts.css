@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Caveat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Caveat"),
+            url(../fonts/Caveat-Bold.woff2) format("woff2"),
+            url(../fonts/Caveat-Bold.woff) format("woff"),
+            url(../fonts/Caveat-Bold.ttf) format("ttf");
+}
+@font-face {
+    font-family: "Caveat";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Caveat"),
+            url(../fonts/Caveat-Medium.woff2) format("woff2"),
+            url(../fonts/Caveat-Medium.woff) format("woff"),
+            url(../fonts/Caveat-Medium.ttf) format("ttf");
+}

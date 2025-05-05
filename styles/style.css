@@ -1,0 +1,33 @@
+@import url(utils.css);
+
+.main__top {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    font-family: Caveat, sans-serif;
+}
+
+.main__title {
+    font-size: 32px;
+}
+
+.main__button {
+    background-color: rgb(226, 174, 78);
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.main__button:hover {
+    transform: scale(1.07);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
