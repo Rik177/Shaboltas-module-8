@@ -30,4 +30,7 @@ function addPhotos(photosArray) {
 
 galleryButton.addEventListener("click", () => { 
     getPhotos();
+    setTimeout(() => {
+        galleryButton.blur();
+    }, 100);
 })
