@@ -1,12 +1,18 @@
 @import url(utils.css);
+@import url(animation.css);
 
 .main__top {
+    background-color: #ffffff;
     display: flex;
     padding: 40px;
     justify-content: center;
     align-items: center;
     gap: 80px;
     font-family: Caveat, sans-serif;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .main__title {
@@ -29,5 +35,54 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    justify-content: center;
 }
 
+.gallery img {
+    justify-self: center;
+    width: 400px;
+    height: 300px;
+}
+
+
+
+.gallery__loader {
+    display: none;
+    background-color: rgba(255, 228, 196, 0.637);
+    width: 100vw;
+    height: calc(100% - 135px);
+    position: fixed;
+    left: 0;
+}
+
+.loader__content {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/loader.svg);
+    background-size: 70px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 1367px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 951px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery img {
+        width: 600px;
+        height: 500px;
+    }
+}
